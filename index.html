@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HPBD HHNT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Bootstrap và tùy chỉnh -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/css01.css">
+
+    <!-- Google Fonts Việt hóa -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 800%;
+        }
+
+        .image-container {
+            position: relative;
+            text-align: center;
+        }
+
+        .modal-body img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        audio {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Banner -->
+    <div class="container-fluid">
+        <div class="jumbotron img_banner_hpbd">
+            <div class="text-center text-danger bg-danger">
+                <h1>TO: BÉ IU</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thẻ sinh nhật -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-md-4 col-sm-4">
+                <p style="padding-top: 5px"></p>
+            </div>
+            <div id="bond" class="col-xs-8 col-md-8 col-sm-8 text-center">
+                <img data-toggle="modal" data-target="#myModal"
+                    class="media-object img-responsive img-thumbnail bg-snow-tranparent-hidden"
+                    src="img/Winter happy birthday.jpg" alt="Birthday Image" style="height: 360px; cursor: pointer;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal hiển thị thiệp -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title text-info" id="myModalLabel">Thiệp sinh nhật</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <!-- Ảnh chính có chữ overlay -->
+                    <div class="image-container">
+                        <img src="img/Winter happy birthday.jpg" alt="Happy Birthday">
+                        <div class="overlay-text">
+                            <h3>Gửi: Bé Hương iu thương</h3>
+                            <p>Chúc mừng sinh nhật em</p>
+                            <p>Người con gái anh yêu thương nhất</p>
+                            <h4>Happy birthday to you!</h4>
+                            <p>From: Hoàng Thế Lực 💗</p>
+                        </div>
+                    </div>
+
+                    <!-- Âm nhạc -->
+                    <div class="text-center">
+                        <audio controls autoplay>
+                            <source src="ms/hpbd.MP3" type="audio/mpeg">
+                            Trình duyệt của bạn không hỗ trợ audio.
+                        </audio>
+                    </div>
+
+                    <!-- Ảnh phụ -->
+                    <div class="containeri text-center" style="margin-top: 20px;">
+                        <img class="img img-responsive" src="img/Untitled-2.jpg" alt="Ảnh trang trí">
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary">OK</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid footer navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8"></div>
+                <div class="col-xs-4"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/snowstorm-min.js"></script>
+    <script src="js/js01.js"></script>
+
+</body>
+
+</html>
